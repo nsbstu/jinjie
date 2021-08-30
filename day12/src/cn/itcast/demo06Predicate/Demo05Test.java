@@ -48,7 +48,8 @@ public class Demo05Test {
         ArrayList<String> list = filter(array, (String s) -> {
             //必须为女生
             return s.split(",")[1].equals("女");
-        }, (String s) -> {
+        },
+                (String s) -> {
             //姓名为4个字
             return s.split(",")[0].length() == 4;
         });

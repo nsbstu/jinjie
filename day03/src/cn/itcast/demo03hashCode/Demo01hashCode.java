@@ -41,7 +41,7 @@ public class Demo01hashCode {
         System.out.println(s1.hashCode());
         System.out.println(s2.hashCode());
 
-
+        //重地==通话的哈希值
         System.out.println("重地".hashCode());
         System.out.println("通话".hashCode());
 

@@ -20,7 +20,7 @@ public class Demo04Test {
         InputStreamReader isr = new InputStreamReader(new FileInputStream("day10\\我的GBK文档.txt"),"gbk");
 
         //2：创建OutputStreamWriter对象，构造方法中传递字节输出流和指定的编码表名称
-        OutputStreamWriter osw = new OutputStreamWriter(new FileOutputStream("day10\\我的utf-8文档.txt"),"utf-8");
+        OutputStreamWriter osw = new OutputStreamWriter(new FileOutputStream("day10\\我的utf-8文档1.txt"),"utf-8");
         //3：使用InputStreamReader对象中的方法read读取文件
         int len = 0;
         while((len = isr.read()) != -1){

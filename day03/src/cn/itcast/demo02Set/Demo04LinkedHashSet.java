@@ -22,7 +22,8 @@ public class Demo04LinkedHashSet {
         linked.add("abc");
         linked.add("abc");
         linked.add("itcast");
-        System.out.println(linked);
+        System.out.println(linked);//[www, abc, itcast]
+
 
     }
 }

@@ -18,6 +18,16 @@ public class Demo01Consumer {
     }
 
     public static void main(String[] args) {
+        //使用匿名内部类
+        method("李黑", new Consumer<String>() {
+            @Override
+            public void accept(String name) {
+               String reName =  new StringBuffer(name).reverse().toString();
+                System.out.println(reName);
+            }
+        });
+
+//====================================================================================================
         //调用method方法，传递的参数是一个函数式接口，可以调用lambda表达式
         method("李白",(name)->{
             //消费1：打印输出name

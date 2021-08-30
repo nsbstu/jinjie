@@ -21,18 +21,18 @@ public class Man extends Human{
             Human h = new Human();
             //调用父类的sayHello方法
             h.sayHello();
-        });*/
+        });
+       */
         //因为有子父类关系，所以存在一个关键字super，代表父类，所以我们可以直接使用super调用父类的成员方法
-        /*method(()->{
+      /*  method(()->{
             super.sayHello();
-        });*/
-
-        /*
-        使用super引用类的成员方法
+        });
+      */
+        /*使用super引用类的成员方法
         super是已经存在
         父类的成员方法sayhello也是已经存在的
-        所以我们直接使用super引用弗列的成员方法
-         */
+        所以我们直接使用super引用弗列的成员方法*/
+
         method(super::sayHello);
 
     }

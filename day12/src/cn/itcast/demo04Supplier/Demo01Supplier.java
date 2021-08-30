@@ -11,7 +11,7 @@ import java.util.function.Supplier;
 
  */
 public class Demo01Supplier {
-    //创建一个方法，方法的参数传递Supplier《T》接口，泛型执行String。get方法就会返回一个String
+    //创建一个方法，方法的参数传递Supplier《T》接口，泛型执行String。get方法就会返回一个String类型
     public static String getString(Supplier<String> sup){
         return sup.get();
     }

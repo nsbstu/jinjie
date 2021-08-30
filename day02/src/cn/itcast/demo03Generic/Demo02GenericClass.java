@@ -6,6 +6,7 @@ public class Demo02GenericClass {
         GenericClass gc = new GenericClass();
         gc.setName("只能是字符串");
         Object obj = gc.getName();
+        System.out.println(obj);
 
         //创建GenericClass对象，泛型使用Interger
         GenericClass<Integer> gc2 = new GenericClass<>();

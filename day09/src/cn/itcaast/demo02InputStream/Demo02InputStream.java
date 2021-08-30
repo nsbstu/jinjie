@@ -25,13 +25,13 @@ public class Demo02InputStream {
         FileInputStream fis = new FileInputStream("day09\\b.txt");
         // 2：使用FileInputStream对象的方法read，读取文件
         //int read(byte[] b) ： 从输入流中读取一些字节数，并将它们存储到字节数组 b中。
-       /* byte[] bytes = new byte[2];
+     /*   byte[] bytes = new byte[2];
         int len = fis.read(bytes);
         System.out.println(len);//2
        // System.out.println(Arrays.toString(bytes));//[65, 66]
         System.out.println(new String(bytes));
 
-        len = fis.read(bytes);
+       len = fis.read(bytes);
         System.out.println(len);//2每次读取的字符串的个数
         System.out.println(new String(bytes));//CD
 
@@ -41,8 +41,8 @@ public class Demo02InputStream {
 
         len = fis.read(bytes);
         System.out.println(len);//-1每次读取的字符串的个数
-        System.out.println(new String(bytes));//ED*/
-
+        System.out.println(new String(bytes));//ED
+*/
         /*
         循环优化
         发现以上读取的文件是一个重复的过程，所以可以使用循环优化

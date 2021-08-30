@@ -9,7 +9,7 @@ import java.io.File;
  */
 public class Demo04Recursion {
     public static void main(String[] args) {
-        File file = new File("D:\\ideaproject\\jinjie\\day08");
+        File file = new File("E:\\ideaproject\\jinjie\\day08");
         getAllFile(file);
     }
 

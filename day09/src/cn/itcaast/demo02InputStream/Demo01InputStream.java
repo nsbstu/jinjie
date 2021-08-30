@@ -40,7 +40,7 @@ public class Demo01InputStream {
         FileInputStream fis = new FileInputStream("day09\\a.txt");
         // 2：使用FileInputStream对象的方法read，读取文件
         //int read()读取文件中的一个字节并返回，读取到文件的末尾返回-1
-       /* int len = fis.read();
+     /*   int len = fis.read();
         System.out.println(len);//97 a
 
         len = fis.read();
@@ -66,13 +66,12 @@ public class Demo01InputStream {
           3：(len = fis.read()) != -1  ：判断变量len是否不等于-1
          */
 
-        int len = 0;
+    /*    int len = 0;
         while ((len = fis.read()) != -1) {
             System.out.print((char) len);
-        }
+        }*/
 
-      /*
-      //错误示范
+     /* //错误示范
       while(fis.read() != -1){
             System.out.println(fis.read());//98  -1
         }*/

@@ -21,13 +21,33 @@ public class Demo03Test {
     }
     public static void main(String[] args) {
         String[] array = { "迪丽热巴,女", "古力娜扎,女", "马尔扎哈,男" };
+      //匿名内部类
+        printInfo(array, new Consumer<String>() {
+            @Override
+            public void accept(String s) {
+                String name = s.split(",")[0];
+                System.out.print("姓名：" + name);
+            }
+        }, new Consumer<String>() {
+            @Override
+            public void accept(String s) {
+                String sex = s.split(",")[1];
+                System.out.println("。性别：" + sex);
+            }
+        });
+
+
+
+
+
+
         //调用printInfo方法
         printInfo(array,(message)->{
             String name = message.split(",")[0];
             System.out.print("姓名：" + name);
         },(message)->{
-            String age = message.split(",")[1];
-            System.out.println("。年龄：" + age);
+            String sex = message.split(",")[1];
+            System.out.println("。性别：" + sex);
         });
     }
 

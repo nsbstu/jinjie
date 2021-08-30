@@ -26,6 +26,19 @@ public class Demo01Function {
     public static void main(String[] args) {
         //定义一个字符串类型的整数
         String s = "12345";
+
+        //匿名内部类
+        change(s, new Function<String, Integer>() {
+            @Override
+            public Integer apply(String str) {
+                return Integer.parseInt(str);
+            }
+        });
+
+
+
+
+
         //调用change方法，传递字符串和lambda表达式
         change(s,(String str)->{
             //把字符串类型的的整数转换为Integer类型的整数返回

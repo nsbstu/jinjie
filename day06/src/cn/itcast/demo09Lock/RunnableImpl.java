@@ -54,7 +54,7 @@ public class RunnableImpl implements Runnable {
 
 
 
-  /*  //设置线程任务：卖票
+/*    //设置线程任务：卖票
     @Override
     public void run() {
         //使用死循环让卖票任务重复进行

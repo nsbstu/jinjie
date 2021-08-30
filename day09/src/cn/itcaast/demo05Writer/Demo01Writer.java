@@ -42,6 +42,7 @@ public class Demo01Writer {
         FileWriter fw = new FileWriter("day09\\d.txt");
         //2：使用FileWriter的方法write，把数据写入到内存缓冲区（字符转换为字节）
         fw.write(97);
+        fw.write(98);
         //3：使用FileWriter中的方法flush，把内存缓冲区的数据，刷新到文件中
         fw.flush();
         //4：释放资源（会先把内存缓冲区的数据刷新到文件中）

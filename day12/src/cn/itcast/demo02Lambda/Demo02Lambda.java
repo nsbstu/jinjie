@@ -29,7 +29,7 @@ public class Demo02Lambda {
         只要条件满足，日志的等级是1
             才会调用接口MessageBuilder中的方法builderMessage
             才会进行字符串的拼接
-        如果条件不满足，日志的等级不是1ji
+        如果条件不满足，日志的等级不是1
             那么MessageBuilder接口中的方法builderMessage也不会执行
             所以拼接字符串的代码不会执行
         所以不会存在性能的浪费

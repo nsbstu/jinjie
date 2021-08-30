@@ -1,5 +1,6 @@
 package cn.itcast.demo02Stream;
 
+import java.util.function.Consumer;
 import java.util.stream.Stream;
 
 /*
@@ -21,6 +22,14 @@ public class Demo02Stream_forEach {
     public static void main(String[] args) {
         //获取一个Stream流
         Stream<String> stream = Stream.of("张三", "李四", "王五", "赵六");
+        //匿名内部类
+     /*   stream.forEach(new Consumer<String>() {
+            @Override
+            public void accept(String s) {
+                System.out.println(s);
+            }
+        });
+*/
         //使用Stream中的方法forEach对流中的数据进行遍历
         /*stream.forEach((String name)->{
             System.out.println(name);

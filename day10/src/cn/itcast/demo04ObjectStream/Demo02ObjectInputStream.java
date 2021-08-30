@@ -40,5 +40,6 @@ public class Demo02ObjectInputStream {
         System.out.println(o);
         Person p = (Person) o;
         System.out.println(p.getName() + p.getAge());
+        //牛世博
     }
 }

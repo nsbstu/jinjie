@@ -19,7 +19,7 @@ public class Demo02CloseAndFlush {
         //刷新之后可以继续使用
         fw.write(98);
         //4：释放资源（会先把内存缓冲区的数据刷新到文件中）
-        fw.close();
+        //fw.close();
         //close方法之后流已经关闭了，已经从内存中消失了，流就不能继续使用了
        // fw.write(99);//IOException: Stream closed
     }
